@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(68, 68, 68);
+}
+
+#container {
+    margin: auto;
+    background-color: rgb(228, 228, 228);
+    max-width: 600px;
+    height: 10000px;
+}
+
+#imagem {
+    text-align: center;
+}
+
+#logo{
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#texto {
+    text-align: center;
+    font-weight: bold;
+}
+
+.produto {
+    width: 500px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
