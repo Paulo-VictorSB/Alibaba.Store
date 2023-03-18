@@ -10,10 +10,40 @@
 </head>
 <body>
     <div id="container">
+        <button id="botao">NOTA DE ESCLARECIMENTO</button>
+        <div id="texto" style="display: none;">Caro usuário,
+
+            Gostaríamos de esclarecer que nosso site tem como objetivo fornecer informações e direcionar você para o site oficial do AliExpress, onde você pode adquirir os produtos desejados. Nós não efetuamos vendas ou transações financeiras em nosso site. <br>
+            
+            É importante destacar que não solicitamos informações pessoais, dados de cartão de crédito ou qualquer forma de pagamento em nosso site. Todo o processo de compra é realizado diretamente no site oficial do AliExpress, e você só precisa clicar no link fornecido em nosso site para acessá-lo. <br>
+            
+            Nosso objetivo é oferecer uma experiência de compra segura e conveniente para nossos usuários, e garantimos que todas as informações fornecidas em nosso site são confiáveis e atualizadas. <br>
+            
+            Caso tenha alguma dúvida ou necessite de mais informações, não hesite em entrar em contato conosco. <br> <br>
+            
+            Atenciosamente, <br>
+            
+            Alibaba Store.</div>
+        <script>
+            const botao = document.getElementById("botao");
+            const texto = document.getElementById("texto");
+
+            botao.addEventListener("click", function() {
+                const estilo = window.getComputedStyle(texto);
+                const displayAtual = estilo.getPropertyValue("display");
+
+                if (displayAtual === "none") {
+                    texto.style.display = "block";
+                } else {
+                    texto.style.display = "none";
+                }
+                });
+        </script>
+
         <div id="imagem">
             <img src="7211622538211688453_c5_100x100.jpeg"  id="logo" alt="Alibaba">
         </div>
-        <div id="texto">
+        <div id="titulo">
             <h1>@Alibaba.Store.Br</h1>
         </div>
         <div class="produto">

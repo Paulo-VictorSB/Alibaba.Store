@@ -9,6 +9,7 @@ body {
 }
 
 #container {
+    padding-top: 5px;
     margin: auto;
     background-color: rgb(228, 228, 228);
     max-width: 600px;
@@ -25,13 +26,13 @@ body {
     margin-top: 50px;
 }
 
-#texto {
+#titulo {
     text-align: center;
     font-weight: bold;
 }
 
 .produto {
-    max-width: 600px;
+    max-width: 590px;
     height: 60px;
     background-color: white;
     text-align: center;
@@ -39,9 +40,25 @@ body {
     border-radius: 10px;
     font-weight: bold;
     border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+#botao {
+    display: flex;
+    margin: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+}
+
+#texto {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
 }
